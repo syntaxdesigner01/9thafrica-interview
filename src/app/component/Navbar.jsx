@@ -4,6 +4,7 @@ import React from "react";
 import { MdMenu } from "react-icons/md";
 import { FaUser } from "react-icons/fa";
 import { TiShoppingCart } from "react-icons/ti";
+import { CiSearch } from "react-icons/ci";
 
 export default function Navbar() {
   const [showDropdown, setShowDropdown] = React.useState(false);
@@ -20,7 +21,7 @@ export default function Navbar() {
         container.className =
           "w-[90vw] px-10 sticky top-0 z-50 flex justify-evenly  items-center transition-width duration-300 px-20 rounded-x-full";
         input.className =
-          "rounded-md border-2 px-2 border-black h-10 w-[40vw] pl-5 placeholder:italic placeholder:text-sm";
+          "rounded-md outline-none h-10 w-[40vw] pl-5 placeholder:italic placeholder:text-sm";
         logo.className = "w-50 h-50";
         account.className = "hidden";
         nav.className =
@@ -29,7 +30,7 @@ export default function Navbar() {
         container.className =
           "w-full sticky top-0 z-50  transition-width duration-300 px-0";
         input.className =
-          "rounded-md border-2 px-2 border-black h-10 w-full pl-5 placeholder:italic placeholder:text-sm";
+          "rounded-md outline-none px-2 h-10 w-full pl-5 placeholder:italic placeholder:text-sm";
         account.className = "block";
         nav.className =
           " bg-white shadow-md h-20 px-10 flex items-center justify-between sticky top-0 z-50 w-full transition-width duration-300";
@@ -47,7 +48,7 @@ export default function Navbar() {
       id="container"
       className="w-full sticky top-0 z-50 flex justify-center items-center px-0"
     >
-      <nav className = "rounded-xl mt-10 bg-white shadow-md h-20 px-10 flex items-center justify-between sticky top-0 z-50 w-full transition-width duration-300">
+      <nav className="rounded-xl bg-white shadow-md h-20 px-10 flex items-center justify-between sticky top-0 z-50 w-full transition-width duration-300">
         <section className="flex items-center space-x-4">
           <MdMenu className="text-lg rounded-md border-2 border-black h-10 w-10 " />
           <Image
@@ -60,11 +61,14 @@ export default function Navbar() {
         </section>
         <section className="w-[40vw]">
           <form action="" className="w-full">
-            <input
-              type="search"
-              className="rounded-md border-2 px-2 border-black h-10 w-full pl-5 placeholder:italic placeholder:text-sm"
-              placeholder="Search for items..."
-            />
+            <section className="flex items-center gap-2 border-2  rounded-md">
+              <input
+                type="search"
+                className="  h-10 w-full pl-5 placeholder:italic placeholder:text-sm outline-none"
+                placeholder="Search for items..."
+              />
+              <CiSearch className="bg-primary text-white font-semibold h-10 w-20 rounded-r-md text-10" />
+            </section>
           </form>
         </section>
 
