@@ -19,7 +19,7 @@ export default function Navbar() {
 
       if (window.scrollY > 50) {
         container.className =
-          "w-[90vw] px-10 sticky top-0 z-50 flex justify-evenly  items-center transition-width duration-300 px-20 rounded-x-full";
+          "w-[96vw] px-10 sticky top-0 z-50 flex justify-evenly  items-center transition-width duration-300 px-20 rounded-x-full";
         input.className =
           "rounded-md outline-none h-10 w-[40vw] pl-5 placeholder:italic placeholder:text-sm";
         logo.className = "w-50 h-50";
@@ -83,7 +83,7 @@ export default function Navbar() {
             </h1>
             {showDropdown && (
               <section
-                className=" top-10 py-4 flex flex-col justify-center items-center z-50 bg-white shadow-xl rounded-md border border-s-lime-50 w-[15vw] right-[-4vw] absolute px-4 gap-2"
+                className=" top-16 py-4 flex flex-col justify-center items-center z-50 bg-white shadow-xl rounded-md border border-s-lime-50 w-[15vw] right-[10vw] absolute px-4 gap-2"
                 onMouseLeave={() => setShowDropdown(false)}
               >
                 <button className="font-bold bg-primary py-2 rounded-md text-white w-full ">
