@@ -83,7 +83,7 @@ export default function Navbar() {
             </h1>
             {showDropdown && (
               <section
-                className=" top-16 py-4 flex flex-col justify-center items-center z-50 bg-white shadow-xl rounded-md border border-s-lime-50 w-[15vw] right-[5vw] absolute px-4 gap-2"
+                className=" top-10 py-4 flex flex-col justify-center items-center z-50 bg-white shadow-xl rounded-md border border-s-lime-50 w-[15vw] right-[-4vw] absolute px-4 gap-2"
                 onMouseLeave={() => setShowDropdown(false)}
               >
                 <button className="font-bold bg-primary py-2 rounded-md text-white w-full ">
