@@ -8,24 +8,24 @@ export default function Assurence() {
       <section className="py-6 w-[30vw] bg-white shadow-md border-b-2 border-s-lime-50 flex  items-center gap-4 rounded-xl  px-10 ">
         <FaMoneyCheckDollar className="text-4xl" />
         <section className="flex flex-col ">
-          <h1 className="font-semibold text-xl">Payments Guaranteed</h1>
-          <p >Enjoy secure & safe Payments</p>
+          <h1 className="font-semibold text-xl ">Payments Guaranteed</h1>
+          <p className='text-black/75'>Enjoy secure & safe Payments</p>
         </section>
       </section>
 
       <section className="py-6 w-[30vw] bg-white shadow-md border-b-2 border-s-lime-50 flex  items-center gap-4 rounded-xl  px-10 ">
         <GrUserWorker className="text-4xl" />
         <section className="flex flex-col ">
-          <h1 className="font-semibold text-xl">Quality Products</h1>
-          <p >Vetted & SON certified.</p>
+          <h1 className="font-semibold text-xl ">Quality Products</h1>
+          <p className='text-black/75'>Vetted & SON certified.</p>
         </section>
       </section>
 
       <section className="py-6 w-[30vw] bg-white shadow-md border-b-2 border-s-lime-50 flex  items-center gap-4 rounded-xl  px-10 ">
         <IoMdTime className="text-4xl" />
         <section className="flex flex-col ">
-          <h1 className="font-semibold text-xl">Timely Delivery</h1>
-          <p >Nation-wide service</p>
+          <h1 className="font-semibold text-xl ">Timely Delivery</h1>
+          <p className='text-black/75'>Nation-wide service</p>
         </section>
       </section>
     </section>
