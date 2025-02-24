@@ -61,13 +61,15 @@ export default function Navbar() {
         </section>
         <section className="w-[40vw]">
           <form action="" className="w-full">
-            <section className="flex items-center gap-2 border-2  rounded-md">
+            <section className="flex items-center gap-2 border-2  rounded-md ">
               <input
                 type="search"
-                className="  h-10 w-full pl-5 placeholder:italic placeholder:text-sm outline-none"
+                className="  h-10 w-full pl-5 placeholder:italic placeholder:text-sm outline-none bg-white"
                 placeholder="Search for items..."
               />
-              <CiSearch className="bg-primary text-white font-semibold h-10 w-20 rounded-r-md text-10" />
+              <button className="bg-primary text-white font-semibold h-10 w-20 rounded-r-md flex justify-center items-center">
+                <CiSearch className="text-2xl" />
+              </button>
             </section>
           </form>
         </section>
@@ -108,7 +110,5 @@ export default function Navbar() {
         </section>
       </nav>
     </section>
-
-
   );
 }
