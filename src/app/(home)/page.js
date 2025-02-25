@@ -2,6 +2,7 @@ import Assurence from "../component/Assurence";
 import Banner from "../component/Banner";
 import Categories from "../component/Categories";
 import DispalyArea from "../component/DispalyArea";
+import MarketSpace from "../component/MarketSpace";
 import Navbar from "../component/Navbar";
 import TopNav from "../component/TopNav";
 
@@ -15,7 +16,8 @@ export default function HomePage() {
       <Banner/>
       <Assurence/>
       <main className="px-20 pb-20">
-        <DispalyArea/>
+        {/* <DispalyArea/> */}
+        <MarketSpace />
       </main>
     </section>
   );

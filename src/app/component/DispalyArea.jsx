@@ -7,7 +7,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-export default function DisplayArea() {
+export default function DisplayArea({ contentTitle, imageUrl,contentTitleColor }) {
   const NextArrow = (props) => {
     const { onClick } = props;
     return (
@@ -31,6 +31,7 @@ export default function DisplayArea() {
     slidesToScroll: 3,
     nextArrow: <NextArrow />,
     prevArrow: <PrevArrow />,
+    gap:20
   };
 
   const items = [...Array(10)].map((_, index) => ({
@@ -38,21 +39,30 @@ export default function DisplayArea() {
     title: "Blender/Juicer",
     price: "$100",
     seller: "Mimi Store",
-    imageUrl: "/items/img1.webp",
+    // imageUrl: "/items/img1.webp",
   }));
 
   return (
-    <section className="bg-white w-full p-4 h-[70vh] shadow-md border-b border-x-lime-50 rounded-xl">
-      <h1 className="text-2xl p-4">New Arrival</h1>
+    <section>
+      <section
+        className={`flex w-full justify-between items-center bg-lime-100 ${
+          contentTitleColor ? contentTitleColor : "bg-lime-100 "
+        } p-4 mb-1`}
+      >
+        <h1 className="text-2xl ">{contentTitle}</h1>
+        <button className="bg-primary text-white px-4 rounded-md font-semibold">
+          View all
+        </button>
+      </section>
 
       <Slider {...settings}>
         {items.map((item) => (
           <section
             key={item.id}
-            className="border-2 border-x-lime-50 rounded-xl mx-1 hover:shadow-2xl hover:border-x-lime-100"
+            className="rounded-xl border-2 mx-4 hover:shadow-2xl hover:z-50 hover:border-x-lime-100"
           >
             <Image
-              src={item.imageUrl}
+              src={imageUrl}
               alt={item.title}
               width={200}
               height={200}
