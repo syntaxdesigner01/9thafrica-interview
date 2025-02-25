@@ -18,6 +18,7 @@ export default function HomePage() {
       <main className="px-20 pb-20">
         {/* <DispalyArea/> */}
         <MarketSpace />
+        <MarketSpace />
       </main>
     </section>
   );
