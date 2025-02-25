@@ -3,6 +3,7 @@ import Banner from "../component/Banner";
 import Brands from "../component/Brands";
 import Categories from "../component/Categories";
 import DispalyArea from "../component/DispalyArea";
+import Footer from "../component/Footer";
 import MarketSpace from "../component/MarketSpace";
 import Navbar from "../component/Navbar";
 import TopNav from "../component/TopNav";
@@ -22,6 +23,7 @@ export default function HomePage() {
         <MarketSpace />
         <Brands/>
       </main>
+      <Footer />
     </section>
   );
 }
