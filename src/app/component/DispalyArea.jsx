@@ -64,8 +64,8 @@ export default function DisplayArea({
           contentTitleColor ? contentTitleColor : "bg-lime-100 "
         } p-4 mb-1`}
       >
-        <h1 className="text-2xl">{contentTitle}</h1>
-        <button className="bg-primary text-white px-4 rounded-md font-semibold">
+        <h1 className="text-2xl font-semibold">{contentTitle}</h1>
+        <button className="bg-primary text-white px-4 rounded-md py-2 font-semibold">
           View all
         </button>
       </section>
